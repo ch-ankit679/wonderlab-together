@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 180" role="img" aria-label="Knitted wool sweater">
+ <defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d6a779"/><stop offset="1" stop-color="#956647"/></linearGradient></defs>
+ <path d="M72 29L91 18Q110 39 129 18L151 29L195 67L174 94L153 78V158H67V78L46 94L25 67Z" fill="url(#w)" stroke="#704b37" stroke-width="7" stroke-linejoin="round"/><path d="M91 19Q110 56 129 19" fill="none" stroke="#f3d5b3" stroke-width="7"/><g stroke="#edc9a3" stroke-width="4" opacity=".85"><path d="M79 70V143M92 67V143M105 67V143M118 67V143M131 67V143M144 70V143"/><path d="M70 83H150M70 105H150M70 127H150"/></g>
+</svg>

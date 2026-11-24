@@ -1,0 +1,4 @@
+WonderLab Together
+Version: 6.0.4
+Build: strict native-boundary read-along
+Patch scope: app.js, styles.css, index.html

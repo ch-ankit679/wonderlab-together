@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" role="img" aria-label="Three-dimensional cutaway model of a plant cell">
+ <defs>
+  <linearGradient id="wall" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#9ed98a"/><stop offset=".38" stop-color="#5fae72"/><stop offset="1" stop-color="#2f7b59"/></linearGradient>
+  <linearGradient id="membrane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3d78f"/><stop offset=".55" stop-color="#c9e9a4"/><stop offset="1" stop-color="#8dcc9b"/></linearGradient>
+  <linearGradient id="cyto" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf8c4"/><stop offset=".5" stop-color="#cceca8"/><stop offset="1" stop-color="#9ad48f"/></linearGradient>
+  <linearGradient id="vacuole" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#b7eff4" stop-opacity=".95"/><stop offset=".45" stop-color="#76cce1" stop-opacity=".86"/><stop offset="1" stop-color="#4aa3c1" stop-opacity=".94"/></linearGradient>
+  <radialGradient id="nucleus" cx="30%" cy="25%"><stop stop-color="#c7a8ed"/><stop offset=".55" stop-color="#8763bd"/><stop offset="1" stop-color="#4b397e"/></radialGradient>
+  <linearGradient id="chloro" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c7ed75"/><stop offset=".48" stop-color="#5da957"/><stop offset="1" stop-color="#256a47"/></linearGradient>
+  <linearGradient id="mito" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc17d"/><stop offset=".55" stop-color="#ed8053"/><stop offset="1" stop-color="#a94c3f"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="13"/><feOffset dy="15"/><feComponentTransfer><feFuncA type="linear" slope=".23"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+  <g id="chloroplast"><ellipse rx="67" ry="34" fill="url(#chloro)" stroke="#286c4b" stroke-width="6"/><path d="M-42 -13Q-19 -28 0 -12T42 -13M-42 0Q-19 -15 0 1T42 0M-42 14Q-19 -1 0 15T42 14" fill="none" stroke="#dbf4a2" stroke-width="8" stroke-linecap="round"/><path d="M-47 -20Q-4 -43 43 -19" fill="none" stroke="#efffc7" stroke-width="5" opacity=".7"/></g>
+  <g id="mitochondrion"><path d="M-57 0C-60 -39 -13 -52 21 -34C62 -13 62 22 28 36C-8 54 -54 39 -57 0Z" fill="url(#mito)" stroke="#a64b3c" stroke-width="6"/><path d="M-40 -4Q-20 -33 -4 -8T26 -17T45 7M-39 20Q-17 -2 -2 22T28 12" fill="none" stroke="#ffd19a" stroke-width="7" stroke-linecap="round"/><path d="M-42 -24Q-7 -45 28 -24" fill="none" stroke="#ffe1b6" stroke-width="5" stroke-linecap="round" opacity=".9"/></g>
+ </defs>
+ <ellipse cx="456" cy="510" rx="360" ry="36" fill="#345e4f" opacity=".15" filter="url(#soft)"/>
+ <g filter="url(#shadow)">
+  <rect x="62" y="48" width="776" height="455" rx="125" fill="url(#wall)" stroke="#2f865a" stroke-width="18"/>
+  <rect x="84" y="69" width="732" height="413" rx="105" fill="url(#membrane)" stroke="#a5d98d" stroke-width="11"/>
+  <rect x="99" y="84" width="702" height="383" rx="88" fill="url(#cyto)" stroke="#fff8d7" stroke-width="5" opacity=".92"/>
+  <path d="M110 116Q135 91 167 97M735 111Q766 103 785 135M116 429Q145 455 178 452M740 442Q770 444 788 408" fill="none" stroke="#fff" stroke-width="10" opacity=".48" stroke-linecap="round"/>
+  <path d="M290 154C320 119 375 117 425 129C517 110 623 149 654 210C690 275 640 387 569 417C487 449 362 424 295 376C239 334 237 213 290 154Z" fill="url(#vacuole)" stroke="#4a9db8" stroke-width="10"/>
+  <path d="M311 167Q430 123 561 161" fill="none" stroke="#e9ffff" stroke-width="12" opacity=".55" stroke-linecap="round"/>
+  <circle cx="213" cy="195" r="65" fill="url(#nucleus)" stroke="#56417d" stroke-width="9"/>
+  <circle cx="223" cy="202" r="25" fill="#4d327c" opacity=".78"/>
+  <path d="M173 165Q206 135 250 169" fill="none" stroke="#f0dfff" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+  <g transform="translate(152 326) rotate(-23)"><use href="#chloroplast"/></g>
+  <g transform="translate(716 198) rotate(20) scale(.8)"><use href="#chloroplast"/></g>
+  <g transform="translate(715 365) rotate(-18) scale(.85)"><use href="#chloroplast"/></g>
+  <g transform="translate(238 420) rotate(18) scale(.65)"><use href="#chloroplast"/></g>
+  <g transform="translate(638 125) rotate(-18) scale(.7)"><use href="#mitochondrion"/></g>
+  <g transform="translate(175 254) rotate(26) scale(.55)"><use href="#mitochondrion"/></g>
+  <g fill="#e2f0ff" stroke="#86bad0" stroke-width="4"><circle cx="310" cy="112" r="9"/><circle cx="553" cy="443" r="8"/><circle cx="766" cy="279" r="7"/><circle cx="130" cy="388" r="7"/></g>
+  <g fill="#fff" opacity=".5"><circle cx="356" cy="112" r="6"/><circle cx="689" cy="98" r="5"/><circle cx="773" cy="350" r="6"/></g>
+ </g>
+</svg>

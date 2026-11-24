@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" role="img" aria-label="Yellow flower specimen used to observe transmitted light">
+ <defs><radialGradient id="petal" cx="35%" cy="25%"><stop stop-color="#fff6bd"/><stop offset="1" stop-color="#f3bc47"/></radialGradient><linearGradient id="stem" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8ed18c"/><stop offset="1" stop-color="#327c4b"/></linearGradient></defs>
+ <path d="M128 120Q123 190 142 248" stroke="url(#stem)" stroke-width="13" fill="none" stroke-linecap="round"/><path d="M137 204Q88 170 70 199Q99 229 137 216M133 177Q174 145 197 168Q180 196 133 190" fill="#64ad65" stroke="#347c4b" stroke-width="5"/>
+ <g fill="url(#petal)" stroke="#dca03d" stroke-width="4"> <ellipse cx="127" cy="70" rx="28" ry="51"/><ellipse cx="127" cy="70" rx="28" ry="51" transform="rotate(45 127 112)"/><ellipse cx="127" cy="70" rx="28" ry="51" transform="rotate(90 127 112)"/><ellipse cx="127" cy="70" rx="28" ry="51" transform="rotate(135 127 112)"/></g>
+ <circle cx="127" cy="112" r="30" fill="#8f5c32" stroke="#674022" stroke-width="5"/><g fill="#f9d778"><circle cx="115" cy="104" r="4"/><circle cx="135" cy="99" r="4"/><circle cx="143" cy="119" r="4"/><circle cx="118" cy="126" r="4"/></g>
+</svg>

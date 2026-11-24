@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-label="Science materials still life with glass, metal, wood, fabric, a beaker and natural samples">
+ <defs>
+  <linearGradient id="table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f3e7d2"/><stop offset="1" stop-color="#c9ad84"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5ffff" stop-opacity=".9"/><stop offset=".4" stop-color="#8acbd4" stop-opacity=".5"/><stop offset="1" stop-color="#e4f8f5" stop-opacity=".8"/></linearGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6fbff"/><stop offset=".25" stop-color="#9babb6"/><stop offset=".5" stop-color="#f1f5f6"/><stop offset=".75" stop-color="#8596a1"/><stop offset="1" stop-color="#dce5e8"/></linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#cf9b5c"/><stop offset=".5" stop-color="#a66d3e"/><stop offset="1" stop-color="#71452c"/></linearGradient>
+  <linearGradient id="wool" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8e8d1"/><stop offset="1" stop-color="#c6a17e"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="150%" height="160%"><feGaussianBlur in="SourceAlpha" stdDeviation="12"/><feOffset dy="15"/><feComponentTransfer><feFuncA type="linear" slope=".21"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ </defs>
+ <ellipse cx="360" cy="425" rx="295" ry="35" fill="#70573e" opacity=".17"/>
+ <path d="M34 350Q190 313 354 350T685 351V430H34Z" fill="url(#table)" opacity=".65"/>
+ <g filter="url(#shadow)">
+  <!-- Clear glass block -->
+  <g transform="translate(60 116)"><path d="M0 25L142 0L168 19V191L24 218L0 197Z" fill="url(#glass)" stroke="#6ea6b1" stroke-width="7"/><path d="M0 25L24 48L168 19M24 48V218" fill="none" stroke="#eaffff" stroke-width="8" opacity=".8"/><path d="M39 75L132 57" stroke="#fff" stroke-width="9" opacity=".6"/></g>
+  <!-- Wooden sample block -->
+  <g transform="translate(244 295)"><path d="M0 40L105 0L206 37L101 82Z" fill="#d7aa71" stroke="#805936" stroke-width="6"/><path d="M0 40L101 82V170L0 127Z" fill="url(#wood)" stroke="#805936" stroke-width="6"/><path d="M101 82L206 37V124L101 170Z" fill="#9b653d" stroke="#805936" stroke-width="6"/><path d="M18 57L86 85M18 76L86 104M118 95L184 66M118 119L184 90" stroke="#e5b97f" stroke-width="5" opacity=".7"/></g>
+  <!-- Steel spoon -->
+  <g transform="translate(480 80) rotate(22 60 80)"><ellipse cx="63" cy="46" rx="46" ry="63" fill="url(#metal)" stroke="#728894" stroke-width="7"/><path d="M63 104L63 291" stroke="url(#metal)" stroke-width="22" stroke-linecap="round"/><path d="M44 34Q61 6 83 35" fill="none" stroke="#fff" stroke-width="10" opacity=".8" stroke-linecap="round"/></g>
+  <!-- Beaker with liquid -->
+  <g transform="translate(485 245)"><path d="M12 0H133M30 5L41 143Q76 168 112 143L125 5" fill="url(#glass)" stroke="#629da9" stroke-width="7"/><path d="M39 78Q75 69 118 78L112 140Q77 161 42 140Z" fill="#83c9d6" opacity=".7"/><path d="M40 78Q75 70 118 78" fill="none" stroke="#eaffff" stroke-width="6"/><path d="M53 98Q70 88 90 98T111 99" fill="none" stroke="#fff" stroke-width="3" opacity=".7"/></g>
+  <!-- Cotton and wool swatches -->
+  <g transform="translate(77 320)"><path d="M0 24Q36 -10 72 24T144 24V91H0Z" fill="#fff4e3" stroke="#b59b7c" stroke-width="5"/><path d="M12 35L134 35M12 52L134 52M12 69L134 69" stroke="#d8c4a7" stroke-width="5" stroke-dasharray="7 8"/><path d="M14 17Q45 -15 77 17T138 17" stroke="#fff" stroke-width="12" fill="none" opacity=".8"/></g>
+ </g>
+ <g fill="#f8e3a8" opacity=".95"><circle cx="215" cy="104" r="10"/><circle cx="238" cy="90" r="6"/><circle cx="206" cy="130" r="7"/></g>
+</svg>

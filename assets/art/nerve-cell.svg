@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220">
+ <defs><linearGradient id="body" x2="1" y2="1"><stop stop-color="#ffd77a"/><stop offset="1" stop-color="#f39c73"/></linearGradient><linearGradient id="axon" x2="1"><stop stop-color="#e9a56c"/><stop offset="1" stop-color="#d47bb3"/></linearGradient></defs>
+ <g fill="none" stroke="#d58e70" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M100 110C145 100 165 104 206 107S275 110 333 92"/>
+  <path d="M94 105C72 72 55 52 30 34M79 110C55 108 35 117 15 142M91 121C74 151 65 173 54 198M104 88C115 59 128 39 149 17"/>
+ </g>
+ <g fill="none" stroke="url(#axon)" stroke-width="7" stroke-linecap="round"><path d="M207 107C247 75 277 66 327 53M225 108C268 131 297 148 336 166"/></g>
+ <g fill="#f5bd7a" stroke="#c87d61" stroke-width="5"><circle cx="104" cy="106" r="39"/><circle cx="102" cy="106" r="13" fill="#b77bb4" stroke="none"/></g>
+ <g fill="#efaa82" stroke="#d58e70" stroke-width="4"><circle cx="30" cy="34" r="7"/><circle cx="15" cy="142" r="7"/><circle cx="54" cy="198" r="7"/><circle cx="149" cy="17" r="7"/><circle cx="333" cy="53" r="7"/><circle cx="336" cy="166" r="7"/></g>
+ <g fill="#fff4ce" opacity=".9"><circle cx="89" cy="89" r="6"/><circle cx="114" cy="93" r="4"/></g>
+</svg>

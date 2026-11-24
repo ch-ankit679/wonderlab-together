@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img" aria-label="Skeletal muscle fibre showing long parallel striated myofibrils">
+ <defs><linearGradient id="fibre" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffd1bf"/><stop offset=".38" stop-color="#e98e89"/><stop offset="1" stop-color="#b94e67"/></linearGradient><linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a93e59"/><stop offset=".5" stop-color="#f4b1a0"/><stop offset="1" stop-color="#a93e59"/></linearGradient><filter id="sh"><feGaussianBlur in="SourceAlpha" stdDeviation="10"/><feOffset dy="8"/><feComponentTransfer><feFuncA type="linear" slope=".18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+ <g filter="url(#sh)"><path d="M48 227C64 92 151 55 241 100C370 47 531 51 674 101C757 62 839 102 854 225C840 355 757 395 674 351C531 402 370 401 241 351C151 397 64 358 48 227Z" fill="url(#fibre)" stroke="#a8495c" stroke-width="13"/><path d="M68 225C84 121 150 88 231 125C368 81 533 85 676 126C754 95 819 127 835 225C819 325 754 356 676 326C533 366 368 368 231 326C150 363 84 329 68 225Z" fill="#f2aaa0" opacity=".35"/></g>
+ <g stroke="url(#stripe)" stroke-width="10" stroke-linecap="round" opacity=".94">
+  <path d="M122 133V326M160 114V346M198 111V349M278 99V357M316 89V365M354 84V367M392 82V369M430 82V369M468 82V369M506 84V367M544 89V365M582 99V357M622 111V349M700 114V346M738 133V326M778 156V303"/>
+ </g>
+ <g stroke="#ffe6d5" stroke-width="5" opacity=".7"><path d="M100 185H800M100 270H800"/></g>
+ <g fill="#7c3b65" stroke="#9d4a66" stroke-width="4"><ellipse cx="170" cy="89" rx="28" ry="12"/><ellipse cx="740" cy="371" rx="28" ry="12"/></g>
+ <path d="M85 217Q50 226 29 200M850 226Q882 208 890 184" fill="none" stroke="#a8495c" stroke-width="9" stroke-linecap="round"/>
+</svg>

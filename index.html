@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8f1">
+  <meta name="wonderlab-build" content="6.0.4-boundary-synced-read-along">
+  <meta name="description" content="A colourful science adventure with interactive lessons, moving models and team challenges.">
+  <title>WonderLab Together — Science Adventure</title>
+  <link rel="icon" href="assets/wonderlab-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=6.0.4">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="WonderLab Together home">
+        <span class="brand-mark"><img src="assets/art/pip.svg" alt=""></span>
+        <span class="brand-copy"><strong>WonderLab <em>Together</em></strong><small>SCIENCE ADVENTURE</small></span>
+      </a>
+      <div class="header-actions">
+        
+        <button class="text-button" id="howItWorksBtn" type="button">How it works</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="homeScreen" class="screen home-screen">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> DISCOVER EVERY CONCEPT. EXPLORE TOGETHER.</div>
+            <h1>Big science ideas.<br><span>One curious class.</span></h1>
+            <p class="hero-lede">Explore science through stories, animated models and hands-on virtual experiments. Learn one big idea at a time, then put your discoveries to the test.</p>
+            <div class="hero-actions">
+              <a href="#topicPicker" class="button button-primary">Choose a science world <span>→</span></a>
+              
+            </div>
+            
+          </div>
+          <div class="hero-art-wrap">
+            <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+            <div class="hero-art-card">
+              <div class="hero-art-top"><span>THE SCIENCE LAB</span><span class="live-indicator"><i></i> READY TO EXPLORE</span></div>
+              <div class="hero-art-scene">
+                <img class="hero-scene-bg" src="assets/art/animal-cell-3d.webp" alt="Three-dimensional animal cell cutaway">
+                <div class="hero-pip-bubble"><img src="assets/art/pip.svg" alt="Pip"><span>“What do you think will happen?”</span></div>
+                <div class="hero-float-tag tag-left"><img src="assets/art/microscope.svg" alt=""><span>LOOK CLOSER</span></div>
+                <div class="hero-float-tag tag-right"><img src="assets/art/beaker.svg" alt=""><span>TEST IT</span></div>
+              </div>
+              <div class="hero-art-bottom"><span><b>2</b> science worlds</span><span><b>6</b> concept lessons</span><span><b>12</b> interactive labs</span></div>
+            </div>
+            <div class="hero-sticker sticker-top">ASK WHY!</div>
+            <div class="hero-sticker sticker-bottom">TRY IT TOGETHER</div>
+          </div>
+        </div>
+
+        <section id="topicPicker" class="topic-section">
+          <div class="section-intro">
+            <div><div class="eyebrow">PICK YOUR SCIENCE WORLD</div><h2>What will you discover today?</h2></div>
+            <p>Choose a world to explore. Discover six ideas with interactive science models, then play the team challenge.</p>
+          </div>
+          <div id="topicGrid" class="topic-grid" aria-live="polite"></div>
+        </section>
+
+        
+      </section>
+
+      <section id="setupScreen" class="screen setup-screen hidden">
+        <button class="back-link" id="setupBack" type="button">← Back to science worlds</button>
+        <div class="setup-layout">
+          <div class="setup-main">
+            <div class="eyebrow">QUICK CLASS SETUP</div>
+            <h1>Let’s bring the<br><span>whole class in.</span></h1>
+            <p class="setup-intro">Pip will lead the explanations, read every question and explain the answers. Your only setup jobs are to choose the chapter pace and team count. Team names are optional.</p>
+            <div class="setup-learning-summary" id="setupChapterSummary">Six guided concept lessons + a chapter-wide team challenge</div>
+            <div id="selectedTopicPreview" class="selected-topic-preview"></div>
+            <div class="setup-field-group">
+              <div class="field-heading"><span class="field-number">01</span><div><b>How much class time do you have?</b><small>We’ll fit the chapter journey to the time you have.</small></div></div>
+              <div class="choice-row" id="durationChoices">
+                <button type="button" class="choice-chip" data-duration="30"><b>30 min</b><small>Quick session</small></button>
+                <button type="button" class="choice-chip selected" data-duration="40"><b>40 min</b><small>Full session</small></button>
+                <button type="button" class="choice-chip" data-duration="50"><b>50 min</b><small>Extra discussion</small></button>
+              </div>
+            </div>
+            <div class="setup-field-group">
+              <div class="field-heading"><span class="field-number">02</span><div><b>How many teams?</b><small>Students discuss in groups and take turns.</small></div></div>
+              <div class="choice-row team-count-row" id="teamCountChoices">
+                <button type="button" class="choice-chip" data-teams="2"><b>2 teams</b></button>
+                <button type="button" class="choice-chip selected" data-teams="3"><b>3 teams</b></button>
+                <button type="button" class="choice-chip" data-teams="4"><b>4 teams</b></button>
+              </div>
+            </div>
+            <div class="setup-field-group team-name-group">
+              <div class="field-heading"><span class="field-number">03</span><div><b>Name your teams <em>(optional)</em></b><small>Keep the suggested names or make them your own.</small></div></div>
+              <div id="teamNameInputs" class="team-name-inputs"></div>
+            </div>
+            <button id="launchSessionBtn" class="button button-primary button-launch" type="button">Start our science adventure <span>→</span></button>
+            <p class="setup-footnote">Minimal teacher setup · Pip guides the learning · One shared screen · No student accounts</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="sessionScreen" class="screen session-screen hidden">
+        <header class="session-header">
+          <button class="session-exit" id="exitSessionBtn" type="button" aria-label="End session">←</button>
+          <div class="session-brand"><span class="session-brand-dot"></span><div><b>SCIENCE ADVENTURE</b><small id="sessionChapterName">Cell: Structure and Functions</small></div></div>
+          <div class="session-progress-wrap"><div class="session-progress-meta"><span id="sessionProgressLabel">WARM-UP</span><span id="sessionProgressCount">GET READY</span></div><div class="session-progress"><span id="sessionProgressBar"></span></div></div>
+          <div class="session-time"><span>CLASS TIME</span><b id="sessionClock">40:00</b></div>
+        </header>
+        <div id="sessionContent" class="session-content"></div>
+      </section>
+
+      <section id="reportScreen" class="screen report-screen hidden">
+        <div id="reportContent"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>WONDERLAB TOGETHER</span><span>Voice-Led Science Lab edition 6.0.4 · Made for curious minds.</span><span>Runs in your browser · No student accounts</span></footer>
+  </div>
+
+  <aside id="assistantDock" class="assistant-dock" aria-label="Pip voice assistant controls">
+    <div class="assistant-avatar"><img src="assets/art/pip.svg" alt="Pip"/></div>
+    <div class="assistant-intro"><b>Pip · Your voice guide</b><span id="assistantStatus" role="status" aria-live="polite">Auto-read is on. I’ll guide each lesson, question and explanation.</span></div>
+    <label class="assistant-auto"><input id="assistantAutoRead" type="checkbox" checked/> <span>Auto-read</span></label>
+    <select id="assistantVoiceSelect" class="assistant-select" aria-label="Choose voice"><option value="">Automatic English voice</option></select>
+    <select id="assistantRate" class="assistant-select assistant-rate" aria-label="Voice speed"><option value="0.86">Slow</option><option value="0.94" selected>Normal</option><option value="1.04">Fast</option></select>
+    <div class="assistant-controls">
+      <button id="assistantReplayBtn" type="button" aria-label="Replay current stage">↻ Replay</button>
+      <button id="assistantPauseBtn" type="button" aria-label="Pause or resume voice">Ⅱ Pause</button>
+      <button id="assistantStopBtn" type="button" aria-label="Stop voice">■ Stop</button>
+    </div>
+  </aside>
+
+  <div id="howModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="howTitle">
+    <div class="modal-scrim" data-close-modal></div>
+    <section class="modal-card how-card">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+      <span class="eyebrow">READY TO EXPLORE</span>
+      <h2 id="howTitle">How to explore WonderLab</h2>
+      <div class="how-grid">
+        <article><span>01</span><b>Choose a world</b><p>Pick Cells or Materials and set up the team challenge.</p></article>
+        <article><span>02</span><b>Explore each idea</b><p>Listen to Pip, explore the science model and complete your mission.</p></article>
+        <article><span>03</span><b>Play Wonder League</b><p>Pip reads every question, gives clues and explains the answers while teams take turns.</p></article>
+      </div>
+      <div class="how-note"><b>Explore together</b><p>WonderLab works in a browser. Take turns on one shared screen and talk through your discoveries.</p></div>
+      <button class="button button-primary" data-close-modal type="button">Got it</button>
+    </section>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data/chapters.js?v=6.0.3"></script>
+  <script src="data/curriculum.js?v=6.0.3"></script>
+  <script src="data/learning-paths.js?v=6.0.3"></script>
+  <script src="app.js?v=6.0.4"></script>
+</body>
+</html>

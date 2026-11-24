@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 130" role="img" aria-labelledby="title desc">
+  <title id="title">Little wooden toy cart</title>
+  <desc id="desc">A small orange wooden cart with two dark wheels carrying a tiny green box.</desc>
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd18a"/><stop offset="1" stop-color="#df9250"/></linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8df91"/><stop offset="1" stop-color="#77b86c"/></linearGradient>
+  </defs>
+  <ellipse cx="91" cy="111" rx="66" ry="9" fill="#718d84" opacity=".16"/>
+  <path d="M20 38h19l8 45h93l12-45h12" fill="none" stroke="#8c6748" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M43 70h92l-5 30H50z" fill="url(#wood)" stroke="#a96f43" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M53 70V44q0-8 8-8h50q8 0 8 8v26z" fill="url(#box)" stroke="#659c5c" stroke-width="5"/>
+  <path d="M62 48h48M62 58h48" stroke="#d9efb8" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+  <circle cx="61" cy="103" r="17" fill="#465c67" stroke="#fff3d8" stroke-width="5"/>
+  <circle cx="61" cy="103" r="6" fill="#b8d8dd"/>
+  <circle cx="126" cy="103" r="17" fill="#465c67" stroke="#fff3d8" stroke-width="5"/>
+  <circle cx="126" cy="103" r="6" fill="#b8d8dd"/>
+  <path d="M22 38h-9" stroke="#8c6748" stroke-width="8" stroke-linecap="round"/>
+  <path d="M79 25q10-12 20 0" fill="none" stroke="#fff0bb" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+</svg>

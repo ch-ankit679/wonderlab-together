@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" role="img" aria-label="Phospholipid bilayer with water-facing heads, inward-facing fatty acid tails, a channel protein and a carrier protein">
+ <defs>
+  <radialGradient id="head" cx="28%" cy="22%"><stop stop-color="#efffff"/><stop offset=".38" stop-color="#91dbe0"/><stop offset="1" stop-color="#328c9a"/></radialGradient>
+  <linearGradient id="tail" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f6d88b"/><stop offset=".5" stop-color="#bd8747"/><stop offset="1" stop-color="#f0c779"/></linearGradient>
+  <linearGradient id="protein" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9fbec"/><stop offset=".5" stop-color="#48a79c"/><stop offset="1" stop-color="#236c7e"/></linearGradient>
+  <linearGradient id="carrier" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe0a9"/><stop offset=".55" stop-color="#dc9b5b"/><stop offset="1" stop-color="#a65b3d"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="145%"><feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dy="8"/><feComponentTransfer><feFuncA type="linear" slope=".18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <g id="lipidTop"><circle cx="0" cy="0" r="17" fill="url(#head)" stroke="#287d8d" stroke-width="5"/><path d="M-6 14C-19 30 -1 44 -13 60S-18 89 -12 108" fill="none" stroke="url(#tail)" stroke-width="8" stroke-linecap="round"/><path d="M6 14C18 30 1 45 13 61S18 90 12 108" fill="none" stroke="url(#tail)" stroke-width="8" stroke-linecap="round"/></g>
+  <g id="lipidBottom"><circle cx="0" cy="0" r="17" fill="url(#head)" stroke="#287d8d" stroke-width="5"/><path d="M-6 -14C-19 -30 -1 -44 -13 -60S-18 -89 -12 -108" fill="none" stroke="url(#tail)" stroke-width="8" stroke-linecap="round"/><path d="M6 -14C18 -30 1 -45 13 -61S18 -90 12 -108" fill="none" stroke="url(#tail)" stroke-width="8" stroke-linecap="round"/></g>
+ </defs>
+ <rect x="18" y="18" width="964" height="424" rx="46" fill="#d9f2ef" opacity=".32"/>
+ <g opacity=".38" fill="#fff"><circle cx="100" cy="95" r="8"/><circle cx="184" cy="370" r="6"/><circle cx="833" cy="73" r="7"/><circle cx="910" cy="352" r="9"/><circle cx="745" cy="390" r="6"/></g>
+ <g filter="url(#shadow)">
+  <rect x="45" y="169" width="910" height="116" rx="16" fill="#d9bd7d" opacity=".12"/>
+  <g transform="translate(70 170)"><use href="#lipidTop"/></g><g transform="translate(140 170)"><use href="#lipidTop"/></g><g transform="translate(210 170)"><use href="#lipidTop"/></g><g transform="translate(280 170)"><use href="#lipidTop"/></g><g transform="translate(350 170)"><use href="#lipidTop"/></g><g transform="translate(420 170)"><use href="#lipidTop"/></g><g transform="translate(490 170)"><use href="#lipidTop"/></g><g transform="translate(560 170)"><use href="#lipidTop"/></g><g transform="translate(630 170)"><use href="#lipidTop"/></g><g transform="translate(700 170)"><use href="#lipidTop"/></g><g transform="translate(770 170)"><use href="#lipidTop"/></g><g transform="translate(840 170)"><use href="#lipidTop"/></g><g transform="translate(910 170)"><use href="#lipidTop"/></g>
+  <g transform="translate(70 285)"><use href="#lipidBottom"/></g><g transform="translate(140 285)"><use href="#lipidBottom"/></g><g transform="translate(210 285)"><use href="#lipidBottom"/></g><g transform="translate(280 285)"><use href="#lipidBottom"/></g><g transform="translate(350 285)"><use href="#lipidBottom"/></g><g transform="translate(420 285)"><use href="#lipidBottom"/></g><g transform="translate(490 285)"><use href="#lipidBottom"/></g><g transform="translate(560 285)"><use href="#lipidBottom"/></g><g transform="translate(630 285)"><use href="#lipidBottom"/></g><g transform="translate(700 285)"><use href="#lipidBottom"/></g><g transform="translate(770 285)"><use href="#lipidBottom"/></g><g transform="translate(840 285)"><use href="#lipidBottom"/></g><g transform="translate(910 285)"><use href="#lipidBottom"/></g>
+  <!-- Channel protein: hydrophilic pore through the bilayer. -->
+  <path d="M355 125C330 146 329 180 344 205L365 243C376 263 376 293 395 320L440 320C459 292 454 264 472 243L494 205C508 180 500 146 478 125C450 105 385 103 355 125Z" fill="url(#protein)" stroke="#256e7e" stroke-width="9"/>
+  <path d="M397 125C381 163 384 190 404 223C424 254 421 282 412 318" fill="none" stroke="#e8fff4" stroke-width="18" stroke-linecap="round" opacity=".86"/>
+  <path d="M437 125C453 163 450 190 430 223C410 254 413 282 422 318" fill="none" stroke="#b4eee0" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+  <!-- Carrier protein: changes shape to move a specific molecule across. -->
+  <path d="M681 120C644 136 639 173 654 205C670 237 663 280 681 322C704 347 755 347 778 322C796 280 789 237 805 205C820 173 815 136 778 120C753 104 706 104 681 120Z" fill="url(#carrier)" stroke="#9f5c3c" stroke-width="9"/>
+  <path d="M703 143C685 173 704 193 719 216C735 240 716 277 716 301" fill="none" stroke="#fff0cf" stroke-width="14" stroke-linecap="round" opacity=".92"/>
+  <path d="M756 143C774 173 755 193 740 216C724 240 743 277 743 301" fill="none" stroke="#f8d29b" stroke-width="10" stroke-linecap="round"/>
+ </g>
+ <path d="M70 111H930" stroke="#fff" stroke-width="3" opacity=".5" stroke-dasharray="6 12"/>
+ <path d="M70 349H930" stroke="#fff" stroke-width="3" opacity=".5" stroke-dasharray="6 12"/>
+</svg>
